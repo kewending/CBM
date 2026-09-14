@@ -66,6 +66,38 @@ uv run gradio_unified_cbm_explorer.py
 
 ---
 
+## 📂 Project Structure & Codebase Overview
+
+```text
+CBM/
+├── cav/                        # Core library for Concept Activation Vectors
+│   ├── config.py               # Central configuration (hyperparameters, paths)
+│   ├── concepts.py             # Logic for weak supervision, LLM prompting & label extraction
+│   ├── embed.py                # Extracts hidden layer embeddings from ModernBERT
+│   ├── train.py                # Trains linear SVM probes on embeddings
+│   ├── score.py                # Projects text into the CAV bottleneck space
+│   └── validate.py             # Validates CAV probe accuracy
+├── data/                       # Datasets, metadata, and notes (audio/transcripts ignored)
+├── thesis/                     # Scripts generating plots, tables, and figures for the thesis
+│   ├── experiment_*.py         # Runs specific sparsity or heatmap experiments
+│   ├── generate_*.py           # Generates LaTeX tables or diagrams
+│   └── plot_*.py               # Generates visualizations (distributions, boxplots)
+├── README.md                   # Main project documentation (this file)
+├── CBM_Pipeline_Overview.md    # Detailed breakdown of the theory and pipeline stages
+├── concept_definitions.md      # Definitions of the 10 linguistic concepts used
+├── extract_par_data.py         # Step 1: Preprocesses DementiaBank CHAT transcripts
+├── generate_llm_dataset.py     # Step 2: Uses LLMs to generate contrastive concept examples
+├── run_cav_pipeline.py         # Step 3: Orchestrates CAV training and embedding extraction
+├── train_cbm.py                # Step 4: Trains the sparse L1 Logistic Regression model
+├── train_modernbert_cv.py      # Baseline: 5-fold cross-validation of ModernBERT directly
+├── alignment.py                # Audio-text forced alignment using WhisperX
+├── gradio_unified_cbm_explorer.py # Interactive Web UI for visualizing explanations
+├── pyproject.toml / uv.lock    # Python dependency management (uv)
+└── .env.example                # Example environment variables file
+```
+
+---
+
 ## 📦 Installation & Setup
 
 Install the required dependencies using `uv`:
