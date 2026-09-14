@@ -1,0 +1,42 @@
+{
+  "noun_to_pronoun_ratio": {
+    "name": "Noun-to-Pronoun Ratio",
+    "description": "Patients frequently substitute specific nouns with low-effort deictic or closed-class pronouns (e.g., 'this', 'that', 'he', 'she') to bypass lexical retrieval failures. Rewrite the given sentence to overuse pronouns and severely underuse specific nouns."
+  },
+  "semantic_specificity": {
+    "name": "Semantic Specificity",
+    "description": "Patients lose precise descriptors and rely heavily on generic superordinate nouns and verbs (e.g., 'thing', 'stuff', 'doing') rather than specific content words. Rewrite the given sentence to replace specific nouns and verbs with vague equivalents."
+  },
+  "semantic_paraphasias": {
+    "name": "Semantic Paraphasias",
+    "description": "The use of incorrect words that are semantically related to the intended target word. YOU MUST rewrite the given sentence by substituting correct nouns with semantically related but clearly incorrect nouns from this exact list: oven, apple, dog, grass, bathroom, machine, laundry, bucket, cake, potato, table, television, skirt, money, shoe, sandwich, glass, coat, milk, cereal."
+  },
+  "lexical_frequency_shifts": {
+    "name": "Lexical Frequency Shifts",
+    "description": "Individuals rely on highly familiar, high-frequency vocabulary. YOU MUST rewrite the given sentence to rely exclusively on generic high-frequency verbs and simple words. Strip away complex nouns. Use words from this exact list as much as possible: is, the, a, to, and, do, go, make, have, get, be, doing, well, going, getting, having, somebody, something."
+  },
+  "syntactic_simplification": {
+    "name": "Syntactic Simplification",
+    "description": "People with dementia often use simpler, shorter sentences and avoid complex grammatical constructions. Rewrite the given sentence into extremely short, simple, fragmented, or overly basic sentences."
+  },
+  "mlu_false_starts": {
+    "name": "MLU & False Starts",
+    "description": "Simplified grammatical planning often leads to abandoned syntactic clauses, stutters, and sentence fragments. YOU MUST rewrite the given sentence to be extremely short (under 6 words total) OR include explicit stuttering using hyphens (e.g., 'The- the boy...') and false starts."
+  },
+  "silent_and_filled_pause_rate": {
+    "name": "Silent and Filled Pause Rate",
+    "description": "The frequency of vocalized fillers (e.g., 'uh', 'um', 'hmm', 'er') points to severe lexical search blocks. Rewrite the given sentence to naturally interject multiple filled pauses."
+  },
+  "repetition_and_repairs": {
+    "name": "Repetition Rate and Speech Repairs",
+    "description": "Perseverative repetitions of identical words or phrases. Rewrite the given sentence to include consecutive repetitions of words or short phrases (e.g., 'The the the boy is is...')."
+  },
+  "information_content_units": {
+    "name": "Information Content Units",
+    "description": "Patients produce 'empty speech', where word count is high but semantic information is low. Rewrite the given sentence to remove specific details about the scene (boy, girl, stool, cookie, sink) while maintaining or increasing the word count with empty filler."
+  },
+  "global_semantic_coherence": {
+    "name": "Global Semantic Coherence",
+    "description": "A reduction in coherence reveals semantic drift. YOU MUST rewrite the given sentence to drastically drift off-topic. You must explicitly mention at least one of these unrelated topics: weather, breakfast, yard, son, daughter, weekend, pets, house, cleaning, summer, yesterday."
+  }
+}
